@@ -1,0 +1,25 @@
+<div style="margin: 0 20px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+    <p id="count"></p>
+    <!-- <p id="board"> </p> -->
+    <!-- <button onclick="server.increment()">Increment</button> -->
+    <br><br>
+
+
+
+    {% set ds=10 %}
+    {% if ds == None %}
+
+    {% else %}
+    {% set coma="," %}
+    <div id='endscreen' class="endscreen"></div>
+        <div  class='board' style="width:600px;">
+        {% for i in range(ds|int) %}  
+            {% for j in range(ds|int) %}
+            <div id={{i|string+coma+j|string}} class="tile" onclick='server.getid(this.id)' name={{i|string+coma+j|string}} ></div>
+            {% endfor %}
+        {% endfor %}
+        </div>    
+    {% endif %}
+
+    
+</div>     

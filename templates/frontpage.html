@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<title>Front Page</title>
+<link rel="stylesheet" type="text/css" href="../static/frontpage.css">
+
+</head>
+
+<body>
+
+<div class="topleft">
+   <a title="About the creators" href="#aboutus">About us</a>
+</div>
+<div class="hide" id="#aboutus" style="font-size:0.7em">
+   <h2>This Gaming web application is created by 7 trainess of <br> Ignite Batch-30 of names
+   Ryan Austin,Sree Krupa,Chabilal,<br>Harika Vaishnavi,Vijayalaxmi Budihal,Sanovar Khan and Lakshmi Basur,<br>under the guidance of Lakshmi Sankaran and Satish Madem.</h2>
+</div>
+<div class="rm">
+   <form action="{{url_for('finalGame')}}" method="get">
+   <h1>🚩MINESWEEPER🚩</h1>
+   <input id="name" type="text" name="name" placeholder="whats your name?" required><br><br>
+   <input type="submit" class="letsplay" value="Lets Play"/>
+</div>
+
+
+</form>
+</body>
+</html>

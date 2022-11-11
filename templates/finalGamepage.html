@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GamePage</title>
+	<link rel="stylesheet" type="text/css" href="../static/gamepage.css">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link href="frontpage.html">
+</head>
+
+<body onload="server.init_board()">
+
+	<div id="title">
+		<h1>🚩  MINESWEEPER   🚩</h1>
+	</div>
+    
+    <nav class="style-1">
+        <a title="Start a new game!!" href="http://127.0.0.1:5000/finalGame" class="btn1">New Game</a>
+        <a title="Rules of Minesweeper" href="#rules" class="btn1">Rules</a>
+        <a title="About the history of Game" href="#about" class="btn1">History</a>
+        <a title="Wanna exit the game?" href="http://127.0.0.1:5000/frontpage" class="btn1">Exit game</a>
+        
+    </nav>
+    <div class="spacer"></div>
+   
+
+    
+    {% if usrname == None %}
+        {%set usrname="" %}
+    {% endif %}
+    <div>
+        <h1 id="write">Welcome {{usrname}}!!</h1>
+    </div>
+    <!--we wiil hav our gam here-->
+    <center>
+        <div id="thegame"> 
+            {% include 'minitest.html' %}
+        </div>
+    </center>
+    
+    <!---------------------->
+
+    <div id="rules">
+    <h2>Minesweeper Rules</h2>
+	
+	<p>
+		The objective in Minesweeper is to find and mark all the mines hidden under the white squares.<br>
+		This is done by clicking on the squares to open them. Each square will have one of the following:
+	
+        <ol class="oll">
+            <li>A mine, and if you click on it you will lose the game.</li>
+            <li>A number, which tells you how many of its adjacent squares have mines in them.</li>
+            <li>Nothing. In this case you know that none of the adjacent squares have mines and they will be automatically opened as well.</li>
+        </ol>
+    </p>
+	<p>
+		If you click on an empty square on the first try and then you'll open up a few adjacent squares as well,<br>
+		which makes it easier to continue.
+		Then it's basically just looking at the numbers shown and figuring out where the mines are.
+		<span class="coloring">Good luck with the game!!</span>
+	</p>
+   </div>
+	
+<div id="about">
+   <h3>About The Game</h3>
+    	<p>
+          Minesweeper was a Microsoft original, written by Robert Donner and Curt Johnson. The concept of Minesweeper is thought to date back to the earliest mainframe games of the 1960’s.<br>
+          The main alterations to the game have been simple ones. The difficulty was slightly tweaked in Windows 2000 and onwards.
+         
+          The game of Minesweeper that we know today was created by Windows for Windows. Robert Donner and Curtis Johnson, who worked for Microsoft, wrote and developed the game for release with the Microsoft Entertainment Pack for Windows 3.1 in 1990. It was then upgraded in 1992 to feature in the in-game pack, replacing Reversi in the process.
+    	</p>
+</div>
+
+
+    
+	<p><a href="#write" class="playlink">Back to game</a></p>
+    
+</body>
+</html>

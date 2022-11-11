@@ -1,0 +1,149 @@
+
+p{
+	text-align: justify;
+  	font-size: 18px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+
+ol.oll {
+	text-align: justify;
+	font-size: 18px;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+}
+.coloring{
+	color:orange;
+}
+
+.playlink{
+	color: blanchedalmond;
+	text-decoration: none;
+}
+#title{
+	margin: 20px;
+}
+
+#rules{
+	margin: auto;
+	width: 70%;
+	line-height: 30px;
+}
+
+#rules > h2{
+	margin: 20px;
+}
+#rules > p{
+	font-family: 'Rubik', sans-serif;
+}
+#about{
+		margin: auto;
+  		width: 70%;
+		font-size: 17px;
+		text-align: justify;
+		line-height: 30px;
+}
+#about > h3{
+	margin: 20px;
+}
+body{
+	color: white;
+	overflow: scroll;
+
+	/* display: flex;
+	flex-direction: column;
+  	justify-content: center; */
+  	
+	align-items: center;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	height: 100vh;
+	background-image: url('../static/hexagone.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+h1{
+	color:#f5e9f5;
+	text-shadow:2px 2px black;
+	font-weight:100;
+	font-family: 'Play';
+	font-weight: 400;
+	text-align: center;
+top:5px;
+}
+.spacer {
+	padding: 15px 0;
+}
+
+#write{
+	font-family: 'Luxurious Roman', cursive;
+   font-size: 26px;
+	 margin-top: 2px;
+
+}
+
+h2{
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+h3{
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+#rules{
+	font-size: 17px;
+	text-align: justify;
+	background: transparent;
+}
+
+
+#gameplay{
+	font-size: 17px;
+	text-align: justify;
+}
+#play{
+	color:#999;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	background:rgba(0, 0, 0);
+}
+
+* {
+	-webkit-transition-property: all;
+	-webkit-transition-duration: .2s;
+  	-moz-transition-timing-function: cubic-bezier(100,50,21,6);
+	-moz-transition-property: all;
+	-moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
+.style-1{
+	text-align: center;
+	cursor:pointer;
+}
+
+
+.btn1{
+  
+  color:#999;
+  background:rgba(0, 0, 0);
+  padding:10px 30px;
+  text-decoration:none;
+  letter-spacing:4px;
+  text-transform:uppercase;
+}
+
+.btn:hover{
+  border:none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  padding:20px 20px;
+  color:#1b1b1b;
+}
+
+#thegame{
+	align-items: center;
+	justify-content: center;
+}
+
