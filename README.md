@@ -1,7 +1,7 @@
 # Minesweeper-using-Flask
 Recreated the retro game Minesweeper using Flask.
 
-How to play:
+-> How to play:
 
 ●	Start by clicking on any random tile.
 
@@ -13,7 +13,9 @@ How to play:
 
 
 
-How to start the game:
+-> How to start the game:
+
+
 
 ●	Take a git clone of the repository.
 
@@ -25,8 +27,9 @@ How to start the game:
 
 
 
+-> File Structure:
 
-File Structure:
+
 
 ●	static folder - contains files such as images that are used on the HTML and css files that are used on different elements of the HTML 
 
